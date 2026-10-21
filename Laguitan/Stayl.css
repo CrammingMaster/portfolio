@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(250, 251, 253);
+}
+
+.Head{
+    background-color: rgb(23, 134, 168);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 40px;
+}
+.Navo {
+    background-color: rgb(170, 240, 9);
+    font-weight: 100;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Navo a {
+    text-decoration: none;
+}
+
+.Sec {
+    background-color: rgb(235, 150, 34);
+    padding: 10px;
+    flex: 4;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.Asi{
+    background-color: rgb(126, 245, 67);
+    padding: 20px;
+    flex: 2;
+    margin: 15px;
+    border-radius: 11px;
+}
+
+.fut{
+    background-color: rgb(8, 253, 148);
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.Head2{
+    background-color: #12e9b3ce;
+    text-align: center;
+    padding: 20px;
+}
+
+.Nabi{
+     background-color: rgb(14, 123, 179);
+    font-weight: 100;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Nabi a{
+    text-decoration: none;
+}

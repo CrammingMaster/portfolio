@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1a202c;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.top-bar a:hover {
+    color: #63b3ed;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #2d3748;
+}
+
+input[type="text"], select {
+    padding: 10px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+}
+
+/* Button Style */
+button {
+    padding: 10px 20px;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2c5282;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    margin: 30px 0;
+}
+
+/* Table Style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+th {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+/* Messages */
+#status-message {
+    color: #38a169;
+    font-weight: bold;
+    margin-top: 10px;
+}

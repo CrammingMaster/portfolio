@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Style(5).css">
+</head>
+<body>
+    <!-- GO BACK TO PORTFOLIO -->
+    <div class="top-bar">
+        <a href="Gintama.html">&larr; Back to Portfolio</a>
+    </div>
+
+    <div class="container">
+        <h1 id="main-title">Welcome, Students!</h1>
+        <p id="message">Welcome to my Interactive profile.</p>
+
+        <input type="text" id="name-input" placeholder="Type your name here...">
+        <p id="status-message">Progress Saved</p>
+
+        <!-- Profile Card -->
+        <div id="profile-card" class="card">
+            <h3>Student Information</h3>
+            <p><strong>Name:</strong> Lian Albert N. Laguitan</p>
+            <p id="course-display"><strong>Course:</strong> BSCS</p>
+            <p><strong>Year Level:</strong> 3rd Year</p>
+
+            <div class="button-group">
+                <button id="change">Change Title</button>
+                <button id="hide">Hide Profile & Table</button>
+            </div>
+        </div>
+
+        <!-- SHOW BUTTON (Placed outside the card, hidden by default) -->
+        <div class="button-group" id="show-container" style="display: none;">
+            <button id="show">Show Profile & Table</button>
+        </div>
+
+        <div class="form-group">
+            <label for="course-select"><strong>Choose Your Course:</strong></label>
+            <select id="course-select">
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS" selected>BSCS</option>
+                <option value="BSIS">BSIS</option>
+            </select>
+        </div>
+
+        <h3>Student List</h3>
+        <p><em>Hover, Click, or Double-Click the rows to see interactions.</em></p>
+        
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>Course</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lian Albert Laguitan</td>
+                    <td>BSCS31A</td>
+                    <td>BSCS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Erson Quilala</td>
+                    <td>BSIT31C</td>
+                    <td>BSIT</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Genesis Llovido</td>
+                    <td>BSIS31A</td>
+                    <td>BSIS</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>John Carlo Cabigayan</td>
+                    <td>BSCS31A</td>
+                    <td>BSCS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="button-group">
+            <button id="odd">Color Odd Rows</button>
+            <button id="even">Color Even Rows</button>
+            <button id="hide-table-btn">Hide Table Only</button>
+            <button id="show-table-btn">Show Table Only</button>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="script(4).js"></script>
+</body>
+</html>

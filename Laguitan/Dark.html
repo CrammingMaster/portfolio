@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style(6).css">
+</head>
+<body>
+<div class="top-bar">
+        <a href="Gintama.html">&larr; Back to Portfolio</a>
+    </div>
+
+  <div class="theme-buttons">
+    <button type="button" id="dark">🌙 Dark Mode</button>
+    <button type="button" id="light">☀️ Original Mode</button>
+  </div>
+
+  <h1>Student Registration Form</h1>
+
+  <div class="card">
+    <form id="studentForm">
+
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="e.g. Rick John" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="e.g. Sagnibac" required>
+      </div>
+
+      <div class="form-group">
+        <label for="studentNumber">Student Number</label>
+        <input type="text" id="studentNumber" placeholder="e.g. 2024-0067" required>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course</label>
+        <select id="course">
+          <option value="BSIT">BSIT</option>
+          <option value="BSCS">BSCS</option>
+          <option value="BSTM">BSTM</option>
+          <option value="BSHM">BSHM</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Register Student</button>
+    </form>
+  </div>
+
+  <h2>Student List</h2>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Student Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody id="studentList">
+      <tr>
+        <td>2024-0067</td>
+        <td>Rick John</td>
+        <td>Sagnibac</td>
+        <td>BSCS</td>
+      </tr>
+      <tr>
+        <td>2024-0021</td>
+        <td>Genesis Michael</td>
+        <td>Odivoll</td>
+        <td>BSIT</td>
+      </tr>
+      <tr>
+        <td>2024-0001</td>
+        <td>Albert Lian</td>
+        <td>Natiugal</td>
+        <td>BSTM</td>
+      </tr>
+      <tr>
+        <td>2024-0099</td>
+        <td>Carlo John</td>
+        <td>Nayagibac</td>
+        <td>BSHM</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="message"></p>
+
+  <!-- jQuery FIRST, then your own script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script(6).js"></script>
+</body>
+</html>

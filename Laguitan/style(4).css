@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 120px; /* Pushes content down below the top bar */
+    position: relative;
+}
+
+h1 {
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+button {
+    background-color: #4f46e5;
+    color: whitesmoke;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#message {
+    font-weight: bold;
+    color: #e53e3e; 
+    margin: 30px 0 20px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#profile, #grades, #schedule {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 15px 20px;
+    margin: 10px auto;
+    border-radius: 12px;
+    color: #4a5568;
+    font-weight: 500;
+    width: 90%;
+    max-width: 350px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}

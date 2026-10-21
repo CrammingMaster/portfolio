@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Demo</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #1a202c;
+            padding: 12px 20px;
+            text-align: left;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: #63b3ed;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #2b6cb0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #2c5282;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        h2 {
+            color: #4a5568;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        p {
+            color: #4a5568;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        #state {
+            color: #d69e2e;
+        }
+
+        #status {
+            color: #38a169;
+        }
+
+        #result {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #2d3748;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="Gintama.html">&larr; Back to Portfolio</a>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1>AJAX Demo</h1>
+            <button id="loadbtn">Load User</button>
+            
+            <h2>Request Status</h2>
+            <p id="state">Ready...</p>
+            <p id="status">Status: Waiting...</p>
+            <div id="result">No data yet</div>
+        </div>
+    </div>
+
+    <script src="script(5).js"></script>
+</body>
+</html>

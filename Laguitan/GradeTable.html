@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Table</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: rgb(250, 251, 253); }
+        header { background-color: mediumslateblue; text-align: center; padding: 20px; color: white; }
+        nav { background-color: aquamarine; text-align: center; padding: 15px; }
+        nav a { text-decoration: none; color: darkslategrey; font-weight: bold; margin: 0 15px; }
+        nav a:hover { color: darkblue; }
+        main { display: flex; justify-content: center; padding: 40px 20px; }
+        
+        /* Table Styling */
+        table { width: 100%; max-width: 600px; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        th, td { padding: 15px; text-align: center; border-bottom: 1px solid #ddd; }
+        th { background-color: darkgoldenrod; color: white; font-size: 18px; }
+        td:first-child { text-align: left; font-weight: bold; } /* Makes the subject names bold and left-aligned */
+        tr:hover { background-color: #f1f1f1; }
+        
+        footer { background-color: khaki; text-align: center; padding: 15px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Grade Table</h1>
+    </header>
+
+    <nav>
+        <a href="RegForm.html">Form of Registration</a>
+        <a href="MyProfyle.html">Profile of Mine</a>
+        <a href="Main.html">Mein</a>
+        <a href="GradeTable.html">Table of Grade</a>
+    </nav>
+
+    <main>
+        <!-- Semantic Table Structure -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Midterm</th>
+                    <th>Finals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>App Dev</td>
+                    <td>92</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Int Sys</td>
+                    <td>88</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Web Dev</td>
+                    <td>95</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>DSAn</td>
+                    <td>89</td>
+                    <td>93</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CompSci.</p>
+    </footer>
+</body>
+</html>

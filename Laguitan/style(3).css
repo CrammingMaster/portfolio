@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Fixed the massive margins and padding */
+.container {
+   margin: 50px auto; /* Centers the box */
+   padding: 40px;
+   background-color: aquamarine;
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   width: 100%;
+   max-width: 400px; /* Prevents it from stretching too far */
+}
+
+img {
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    transition: transform 0.3s ease; /* Smooth animation when it scales */
+}
+
+button {
+    color: white;
+    background-color: rgb(8, 120, 80);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+button:active {
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: wheat;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
