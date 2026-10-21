@@ -112,3 +112,19 @@ tbody tr.even-on:nth-child(even){background:var(--milk);color:#1b2142}
 .gin-art{aspect-ratio:4/3;min-height:260px;border-radius:14px}
 .site-header nav a[aria-current]{border-color:var(--milk);color:var(--milk)}
 @media(max-width:760px){.gin-split{grid-template-columns:1fr}}
+
+/* skills and acknowledgement */
+.eyebrow{margin-bottom:.3rem;font-size:.85rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.skills{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.badge{display:grid;place-items:center;width:58px;height:58px;margin-bottom:.4rem;font-family:'Dela Gothic One',Impact,sans-serif;font-size:1.05rem;color:#fff;background:var(--red);border:3px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 var(--ink);transform:rotate(-4deg);transition:transform .3s}
+.skill:hover .badge{transform:rotate(4deg) scale(1.12)}
+.thanks{position:relative;overflow:hidden;padding:2rem}
+.thanks p{max-width:62ch;margin-bottom:1rem}
+.thanks h2{margin-bottom:1.1rem}
+.signoff{max-width:300px;margin-top:1.6rem;padding-top:1rem;border-top:3px solid var(--line)}
+.signoff p{margin-bottom:.2rem}
+.signoff strong{display:block;font-family:'Dela Gothic One',Impact,sans-serif;font-weight:400;font-size:1.3rem}
+.signoff small{opacity:.75}
+.stamp{position:absolute;top:1.5rem;right:1.5rem;display:grid;place-items:center;width:96px;height:96px;border:5px double var(--red);border-radius:50%;font-family:'Dela Gothic One',Impact,sans-serif;font-size:1.15rem;color:var(--red);opacity:.85;transform:rotate(12deg);transition:transform .4s}
+.thanks:hover .stamp{transform:rotate(0) scale(1.1)}
+@media(max-width:760px){.stamp{width:64px;height:64px;font-size:.8rem;top:1rem;right:1rem}.thanks h2{padding-right:4.5rem}}
